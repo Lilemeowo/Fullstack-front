@@ -1,0 +1,68 @@
+.pedido {
+  padding: 40px 80px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.pedido h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resumen-pedido {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.item-pedido {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-pedido {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-pedido input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-pedido button {
+  padding: 12px;
+  background: #27ae60;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.form-pedido button:hover {
+  background: #1e874b;
+}
+
+.alerta-error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.alerta-ok {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}

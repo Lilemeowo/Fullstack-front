@@ -1,0 +1,43 @@
+.boleta {
+  padding: 40px 80px;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.boleta h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boleta-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.boleta hr {
+  margin: 15px 0;
+}
+
+.boleta h3 {
+  margin-bottom: 10px;
+}
+
+.boleta-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boleta-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boleta-total {
+  font-size: 1.3rem;
+  text-align: right;
+  margin-top: 15px;
+}

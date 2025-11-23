@@ -1,0 +1,56 @@
+.catalogo {
+  padding: 40px 80px;
+}
+
+.catalogo h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.filtros select {
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.producto-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.producto-card img {
+  width: 120px;
+  height: auto;
+}
+
+.producto-card h3 {
+  margin: 10px 0 5px;
+}
+
+.producto-card .precio {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+.producto-card button {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.producto-card button:hover {
+  background: #c0392b;
+}
