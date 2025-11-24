@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Filtros from "./Filtros";
-import Productos from "./Productos";
-import "../styles/catalogo.css";
+import Filtros from "./SelectorCategoria";
+import Productos from "./TarjetasProducto";
+import "../styles/catalogodulces.css";
 
-export default function Catalogo() {
+export default function CatalogoDulces() {
   const [filtro, setFiltro] = useState("");
 
   return (

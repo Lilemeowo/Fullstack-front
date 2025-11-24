@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { productos } from "../data/productos_1";   // ← CORREGIDO
-import "../styles/catalogo.css";
+import "../styles/catalogodulces.css";
 
-export default function Productos({ filtro }) {
+
+
+export default function TarjetasProducto({ filtro }) {
   const { agregarAlCarrito } = useContext(CartContext);
 
   const productosFiltrados = filtro

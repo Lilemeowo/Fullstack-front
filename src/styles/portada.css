@@ -1,0 +1,131 @@
+/* src/styles/portada.css */
+
+.portada {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+
+/* Columna izquierda */
+
+.portada-main {
+    flex: 1.4;
+}
+
+.portada-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--color-borde-suave);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-texto-secundario);
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+}
+
+.portada-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: var(--color-texto);
+}
+
+.portada-subtitle {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    color: var(--color-texto-secundario);
+    max-width: 420px;
+}
+
+.portada-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Botones */
+
+.btn-primary,
+.btn-secondary {
+    font-size: 0.9rem;
+    padding: 9px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--color-acento);
+    color: #790a0a;
+    border-color: var(--color-acento);
+}
+
+.btn-secondary {
+    background: black;
+    color: var(--color-superficie);
+    border-color: rgba(15, 1, 1, 0.5);
+}
+
+.btn-primary:hover {
+    filter: brightness(0.95);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Columna derecha: imagen */
+
+.portada-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.portada-imagen-placeholder {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 4 / 3;
+    border-radius: 24px;
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-superficie);
+    font-size: 0.85rem;
+}
+
+
+/* Si luego usas una imagen real */
+
+.portada-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .portada {
+        flex-direction: column-reverse;
+    }
+    .portada-main,
+    .portada-visual {
+        width: 100%;
+    }
+    .portada-subtitle {
+        max-width: none;
+    }
+}

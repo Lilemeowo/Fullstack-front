@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import "../styles/carrito.css";
 
-export default function Carrito() {
+import "../styles/carritocompra.css";
+
+
+export default function CarritoCompras() {
   const {
     carrito,
     aumentar,
@@ -17,7 +19,7 @@ export default function Carrito() {
 
       <div className="carrito-items">
         {carrito.length === 0 ? (
-          <p className="vacio">Tu carrito está vacío 🛒</p>
+          <p className="vacio">Aun no hay articulos en tu carrito </p>
         ) : (
           carrito.map((item) => (
             <div className="item-carrito" key={item.id}>

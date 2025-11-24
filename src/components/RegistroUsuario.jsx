@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "../styles/forms.css";
 
-export default function Perfil() {
-  const [nombre, setNombre] = useState("Usuario Ejemplo");
-  const [email, setEmail] = useState("usuario@email.com");
+export default function RegistroUsuario() {
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const [mensaje, setMensaje] = useState("");
   const [error, setError] = useState("");
@@ -11,21 +12,22 @@ export default function Perfil() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!nombre || !email) {
+    // Validación básica (igual que en tu app.js original)
+    if (!nombre || !email || !password) {
       setError("Todos los campos son obligatorios.");
       setMensaje("");
       return;
     }
 
     setError("");
-    setMensaje("Perfil actualizado con éxito 🎉");
+    setMensaje("Usuario registrado correctamente 🎉");
 
-    // Más adelante aquí guardaremos en UserContext o backend
+    // Aquí más adelante guardaremos en UserContext o en un backend
   };
 
   return (
-    <section id="perfil" className="perfil">
-      <h2>Perfil del Usuario</h2>
+    <section id="registro" className="registro">
+      <h2>Registro de Usuario</h2>
 
       <form onSubmit={handleSubmit} className="form-registro">
         <input
@@ -42,7 +44,14 @@ export default function Perfil() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <button type="submit">Actualizar</button>
+        <input
+          type="password"
+          placeholder="Contraseña"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button type="submit">Registrarse</button>
       </form>
 
       {error && <p className="alerta-error">{error}</p>}

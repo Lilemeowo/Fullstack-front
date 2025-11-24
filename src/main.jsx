@@ -8,6 +8,8 @@ import { CartProvider } from "./context/CartContext";
 import { UserProvider } from "./context/UserContext";
 import { PedidoProvider } from "./context/PedidoContext";
 
+import "./styles/styles.css";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>

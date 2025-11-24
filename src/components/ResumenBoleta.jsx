@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import { PedidoContext } from "../context/PedidoContext";
-import "../styles/boleta.css";
+import "../styles/resumenboleta.css";
 
-export default function Boleta() {
+export default function ResumenBoleta() {
   const { pedido } = useContext(PedidoContext);
 
-  // Si no hay pedido creado
+  
   if (!pedido) {
     return (
       <section className="boleta">
-        <h2>Boleta de Compra</h2>
+        <h2>Boleta de Compra |Milsabores|</h2>
         <p>No hay un pedido generado todavía.</p>
       </section>
     );

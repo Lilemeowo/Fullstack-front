@@ -1,6 +1,6 @@
-import "../styles/catalogo.css";
+import "../styles/catalogodulces.css";
 
-export default function Filtros({ onFiltrar }) {
+export default function SelectorCategoria({ onFiltrar }) {
 
   const manejarCambio = (e) => {
     onFiltrar(e.target.value);
